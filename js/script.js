@@ -27,12 +27,12 @@ if (contactForm && formStatus) {
     event.preventDefault();
 
     if (!contactForm.checkValidity()) {
-      formStatus.textContent = "Please complete all required fields.";
+      formStatus.textContent = "Խնդրում ենք լրացնել բոլոր պարտադիր դաշտերը։";
       return;
     }
 
     const name = contactForm.name.value.trim();
-    formStatus.textContent = `Thanks, ${name || "there"}! We'll get back to you shortly.`;
+    formStatus.textContent = `Շնորհակալություն, ${name || "ընկեր"}։ Մենք շուտով կկապվենք ձեզ հետ։`;
     contactForm.reset();
   });
 }
